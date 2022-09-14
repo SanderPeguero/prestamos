@@ -13,6 +13,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import edu.ucne.prestamos.ui.ocupaciones_List.ocupaciones_ListScreen
 import edu.ucne.prestamos.ui.ocupaciones.ocupacionesScreen
+import edu.ucne.prestamos.ui.personas.personasScreen
 import edu.ucne.prestamos.util.Screen
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -39,6 +40,9 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(Screen.ocupacionesScreen.route){
                             ocupacionesScreen({ navController.navigateUp() })
+                        }
+                        composable(Screen.personasScreen.route){
+                            personasScreen({ navController.navigateUp() })
                         }
 
                     }

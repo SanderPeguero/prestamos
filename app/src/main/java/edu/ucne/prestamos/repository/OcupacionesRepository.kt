@@ -1,7 +1,6 @@
 package edu.ucne.prestamos.repository
 
 import edu.ucne.prestamos.data.AppDatabase
-import edu.ucne.prestamos.data.DAO.OcupacionesDAO
 import edu.ucne.prestamos.model.Ocupacion
 import javax.inject.Inject
 
