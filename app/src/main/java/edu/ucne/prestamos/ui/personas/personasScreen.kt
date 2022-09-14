@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Create
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -30,7 +31,7 @@ fun personasScreen(
                 viewModel.save()
                 onNavigateBack()
             }) {
-                Icon(imageVector = Icons.Default.Create, contentDescription = "Add a Ocupacion")
+                Icon(imageVector = Icons.Default.Add, contentDescription = "Add a Ocupacion")
             }
         }
     ) {
@@ -95,5 +96,5 @@ fun personasScreen(
 @Composable
 @Preview(showSystemUi = true)
 fun Preview() {
-    personasScreen({ })
+
 }

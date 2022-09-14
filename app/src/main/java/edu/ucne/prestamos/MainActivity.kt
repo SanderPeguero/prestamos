@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     
                     NavHost(
                         navController = navController,
-                        startDestination = Screen.ocupaciones_ListScreen.route
+                        startDestination = Screen.personasScreen.route
                     ){
                         composable(Screen.ocupaciones_ListScreen.route){
                             ocupaciones_ListScreen(
