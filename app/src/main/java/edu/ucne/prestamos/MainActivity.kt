@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import edu.ucne.prestamos.ui.ocupaciones_List.ocupaciones_ListScreen
+import edu.ucne.prestamos.ui.personas_List.personas_ListScreen
 import edu.ucne.prestamos.ui.ocupaciones.ocupacionesScreen
 import edu.ucne.prestamos.ui.personas.personasScreen
 import edu.ucne.prestamos.util.Screen
@@ -31,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     
                     NavHost(
                         navController = navController,
-                        startDestination = Screen.personasScreen.route
+                        startDestination = Screen.personas_ListScreen.route
                     ){
                         composable(Screen.ocupaciones_ListScreen.route){
                             ocupaciones_ListScreen(
@@ -43,6 +44,11 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(Screen.personasScreen.route){
                             personasScreen({ navController.navigateUp() })
+                        }
+                        composable(Screen.personas_ListScreen.route){
+                            personas_ListScreen(
+                                onClick = { navController.navigate(Screen.personasScreen.route)}
+                            )
                         }
 
                     }

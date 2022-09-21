@@ -68,13 +68,13 @@ fun personas_List(
 ){
     LazyColumn(modifier = modifier ){
         items(personas){
-            persona -> ocupacionesRow(persona, viewModel)
+            persona -> personasRow(persona, viewModel)
         }
     }
 }
 
 @Composable
-fun ocupacionesRow(persona: Persona, viewModel: personas_ListViewModel) {
+fun personasRow(persona: Persona, viewModel: personas_ListViewModel) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -96,7 +96,7 @@ fun ocupacionesRow(persona: Persona, viewModel: personas_ListViewModel) {
 
             IconButton(
                 modifier = Modifier,
-                onClick = { viewModel.borrarOcupacion(persona) }
+                onClick = { viewModel.borrarPersona(persona) }
             ) {
                 Icon(imageVector = Icons.Outlined.Delete, contentDescription = "Delete", tint = Color.Black )
             }
@@ -128,5 +128,5 @@ fun Preview() {
 //            salario = 400000.00
 //        )
 //    )
-//    ocupaciones_List(personas = lista)
+    personas_List()
 }

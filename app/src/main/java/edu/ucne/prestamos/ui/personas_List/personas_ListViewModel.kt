@@ -34,7 +34,7 @@ class personas_ListViewModel @Inject constructor(
         }
     }
 
-    fun borrarOcupacion(persona: Persona){
+    fun borrarPersona(persona: Persona){
         viewModelScope.launch(
             Dispatchers.IO
         ){
