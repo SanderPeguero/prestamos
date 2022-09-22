@@ -12,7 +12,7 @@ sealed class Destinations(
     object Ocupaciones: Destinations("Ocupaciones","Ocupaciones", Icons.Filled.Check)
     object Personas: Destinations("Personas", "Personas", Icons.Filled.Person)
     object Prestamos: Destinations("Prestamos","Prestamos", Icons.Filled.List)
-    object Ocupaciones_List: Destinations("Ocupaciones_List","Ocupacioes List", Icons.Filled.Info)
-    object Personas_List: Destinations("Personas_List","Personas List", Icons.Filled.Info)
+    object Ocupaciones_List: Destinations("Ocupaciones_List","Ocupaciones", Icons.Filled.Info)
+    object Personas_List: Destinations("Personas_List","Personas", Icons.Filled.Info)
 //    object Prestamos_List: Destinations("Prestamos_List","Prestamos_List", Icons.Filled.List)
 }

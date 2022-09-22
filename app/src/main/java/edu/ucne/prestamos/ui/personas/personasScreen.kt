@@ -71,7 +71,8 @@ fun personasScreen(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Email") },
                 value = viewModel.email ,
-                onValueChange = { viewModel.email = it}
+                onValueChange = { viewModel.email = it},
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
             )
             //TextField Direccion
             OutlinedTextField(
