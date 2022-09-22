@@ -10,6 +10,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import edu.ucne.prestamos.ui.theme.PrestamosTheme
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -78,15 +79,18 @@ fun MainScreen(){
     val scope = rememberCoroutineScope()
 
     val navigationItems = listOf(
-        Pantalla1,
-        Pantalla2,
-        Pantalla3
+        Ocupaciones,
+        Personas,
+        Prestamos,
+        Ocupaciones_List,
+        Personas_List,
+//        Prestamos_List
     )
 
     Scaffold(
         scaffoldState = scaffoldState,
         bottomBar = { BottomNavigationBar(navController = navController, items = navigationItems) },
-        floatingActionButton = { FloatingActionButton(onClick = {}) {
+        floatingActionButton = { FloatingActionButton(onClick = {}, contentColor = Color.White, backgroundColor = Color(0.153f, 0.153f, 0.153f, 1.0f)) {
             Icon(imageVector = Icons.Default.Add, contentDescription = "Fab Icon")
         } },
         isFloatingActionButtonDocked = false,

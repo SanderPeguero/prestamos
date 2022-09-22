@@ -14,10 +14,10 @@ data class Persona(
     val nombres: String = "",
 
     //Telefono
-    val telefono: Double,
+    val telefono: Double = 0.0,
 
     //Celular
-    val celular: Double,
+    val celular: Double = 0.0,
 
     //Email
     val email: String = "",

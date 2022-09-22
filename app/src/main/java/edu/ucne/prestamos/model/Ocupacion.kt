@@ -14,5 +14,5 @@ data class Ocupacion(
     val descripcion: String = "",
 
     //Salario
-    val salario: Double
+    val salario: Double = 0.0
 )
